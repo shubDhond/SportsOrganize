@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="bballPage" minWidth="528.3901977539062" prefHeight="397.000244140625" prefWidth="541.3903198242188" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="main.BballPage1">
+  <!-- TODO Add Nodes -->
+  <children>
+    <AnchorPane id="AnchorPane" layoutX="0.0" layoutY="1.0" prefWidth="541.3903198242188">
+      <children>
+        <ImageView fitHeight="399.0" fitWidth="542.0" pickOnBounds="true" preserveRatio="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <image>
+            <Image url="@images/bball2.jpg" />
+          </image>
+        </ImageView>
+        <TextField fx:id="bballTeams" layoutX="66.0" layoutY="106.0" prefHeight="23.0" prefWidth="128.0" promptText="Number of Teams">
+          <effect>
+            <DropShadow />
+          </effect>
+        </TextField>
+        <Label layoutX="14.0" layoutY="106.0" prefHeight="23.0" prefWidth="71.0" text="Teams:">
+          <font>
+            <Font name="System Bold Italic" size="13.0" fx:id="x1" />
+          </font>
+          <textFill>
+            <Color blue="0.500" green="0.500" red="0.500" fx:id="x2" />
+          </textFill>
+        </Label>
+        <TextField fx:id="bballCourts" layoutX="66.0" layoutY="175.0" prefHeight="24.0" prefWidth="128.0" promptText="Number of Playing Fields">
+          <effect>
+            <DropShadow />
+          </effect>
+        </TextField>
+        <Label font="$x1" layoutX="14.0" layoutY="175.0" prefHeight="24.0" prefWidth="71.0" text="Courts:" textFill="$x2" />
+        <Label font="$x1" layoutX="14.0" layoutY="244.0" prefHeight="23.0" prefWidth="104.0" text="Time per Match:" textFill="$x2" />
+        <TextField fx:id="bballMatchTime" layoutX="130.0" layoutY="244.0" prefHeight="23.0" prefWidth="206.0" promptText="Time Needed per Match in Minutes">
+          <effect>
+            <DropShadow />
+          </effect>
+        </TextField>
+        <CheckBox id="roundRobbinBtn" fx:id="playoffsBtn" font="$x1" layoutX="14.0" layoutY="302.0" mnemonicParsing="false" text="Playoffs (Elimination rounds with four teams.)" textFill="#dfdfdf" />
+      </children>
+    </AnchorPane>
+    <Label layoutX="6.0" layoutY="14.0" prefHeight="66.0" prefWidth="528.3903198242188" text="To Organize a basketball tournament," textAlignment="CENTER" textFill="WHITE">
+      <effect>
+        <Lighting diffuseConstant="0.31746031746031755" specularConstant="1.9984126984126984" specularExponent="12.380952380952381" surfaceScale="0.0">
+          <bumpInput>
+            <Shadow />
+          </bumpInput>
+          <contentInput>
+            <DropShadow height="47.2063492063492" radius="23.1031746031746" width="47.2063492063492">
+              <input>
+                <Glow />
+              </input>
+            </DropShadow>
+          </contentInput>
+          <light>
+            <javafx.scene.effect.Light.Distant />
+          </light>
+        </Lighting>
+      </effect>
+      <font>
+        <Font name="System Bold Italic" size="15.0" fx:id="x4" />
+      </font>
+    </Label>
+    <Button fx:id="bballNext" layoutX="410.0" layoutY="362.0" mnemonicParsing="false" onAction="#createTournament" prefHeight="22.0001220703125" prefWidth="71.0" text="Next">
+      <effect>
+        <InnerShadow height="55.269841269841265" radius="27.134920634920633" width="55.269841269841265" />
+      </effect>
+      <font>
+        <Font size="15.0" fx:id="x3" />
+      </font>
+    </Button>
+    <Button fx:id="home" font="$x3" layoutX="310.0" layoutY="362.0" minHeight="24.0" mnemonicParsing="false" onAction="#Home" prefHeight="26.999900000002526" prefWidth="71.0" text="Home">
+      <effect>
+        <InnerShadow height="51.238095238095234" radius="25.119047619047617" width="51.238095238095234" />
+      </effect>
+    </Button>
+    <Label font="$x4" layoutX="6.0" layoutY="64.0" prefHeight="23.0" prefWidth="265.0" text="Please Enter the Information Below:" textFill="WHITE">
+      <effect>
+        <Glow level="0.16792452830188678">
+          <input>
+            <DropShadow color="#909090" height="41.15873015873016" radius="20.07936507936508" spread="0.12698412698412698" width="41.15873015873016">
+              <input>
+                <Lighting specularConstant="2.0" specularExponent="22.22222222222222" surfaceScale="0.0">
+                  <bumpInput>
+                    <Shadow />
+                  </bumpInput>
+                  <light>
+                    <javafx.scene.effect.Light.Distant />
+                  </light>
+                </Lighting>
+              </input>
+            </DropShadow>
+          </input>
+        </Glow>
+      </effect>
+    </Label>
+  </children>
+</AnchorPane>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="bballPage2" prefHeight="410.0000915527344" prefWidth="555.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="main.BballPage2">
+  <!-- TODO Add Nodes -->
+  <children>
+    <ImageView fitHeight="410.0000915527344" fitWidth="556.0" layoutX="-1.0" layoutY="0.0" pickOnBounds="true" preserveRatio="false">
+      <image>
+        <Image url="@images/bball2.jpg" />
+      </image>
+    </ImageView>
+    <Label id="bballPage2Lbl" fx:id="Lbl" layoutX="234.0" layoutY="14.0" prefHeight="45.0" prefWidth="167.0" text="Label" textAlignment="CENTER" textFill="WHITE">
+      <effect>
+        <Lighting diffuseConstant="0.31746031746031755" specularConstant="1.9984126984126984" specularExponent="12.380952380952381" surfaceScale="0.0">
+          <bumpInput>
+            <Shadow />
+          </bumpInput>
+          <contentInput>
+            <DropShadow height="47.2063492063492" radius="23.1031746031746" width="47.2063492063492">
+              <input>
+                <Glow />
+              </input>
+            </DropShadow>
+          </contentInput>
+          <light>
+            <javafx.scene.effect.Light.Distant />
+          </light>
+        </Lighting>
+      </effect>
+      <font>
+        <Font name="System Bold Italic" size="20.0" />
+      </font>
+    </Label>
+    <Button id="next" fx:id="Next" layoutX="470.0" layoutY="369.0" mnemonicParsing="false" onAction="#Next" prefHeight="22.0001220703125" prefWidth="71.0" text="Next">
+      <effect>
+        <InnerShadow height="55.269841269841265" radius="27.134920634920633" width="55.269841269841265" />
+      </effect>
+      <font>
+        <Font size="15.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Button id="home" fx:id="Home" font="$x1" layoutX="373.0" layoutY="369.0" minHeight="24.0" mnemonicParsing="false" onAction="#Home" prefHeight="26.999900000002526" prefWidth="71.0" text="Home">
+      <effect>
+        <InnerShadow height="51.238095238095234" radius="25.119047619047617" width="51.238095238095234" />
+      </effect>
+    </Button>
+    <VBox fx:id="tableSpace" layoutX="77.0" layoutY="76.0" prefHeight="258.0" prefWidth="407.0" />
+  </children>
+</AnchorPane>

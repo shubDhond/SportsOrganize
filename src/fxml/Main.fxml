@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="395.9999694824219" prefWidth="517.3332824707031" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="main.Main">
+  <!-- TODO Add Nodes -->
+  <children>
+    <AnchorPane id="AnchorPane" prefHeight="317.5000305175781" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <ImageView fitHeight="395.9999694824219" fitWidth="527.9999483335462" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+          <effect>
+            <Lighting diffuseConstant="1.1746031746031746">
+              <bumpInput>
+                <Shadow />
+              </bumpInput>
+              <light>
+                <javafx.scene.effect.Light.Distant color="#d08888" />
+              </light>
+            </Lighting>
+          </effect>
+          <image>
+            <Image url="@images/blue%20sky.jpg" />
+          </image>
+        </ImageView>
+        <Label fx:id="mainLabel" layoutX="100.0" layoutY="97.0" prefHeight="58.0" prefWidth="329.0" text="Please Select a Sport to Organize:" textFill="#fffb99">
+          <effect>
+            <Bloom threshold="0.10370370370370374" />
+          </effect>
+          <font>
+            <Font name="System Bold Italic" size="20.0" />
+          </font>
+        </Label>
+        <VBox id="mainBtn" alignment="CENTER" layoutX="194.0" layoutY="165.0" spacing="15.0" />
+        <Label layoutX="161.0" layoutY="22.0" prefHeight="39.000099999997474" prefWidth="206.0" text="Welcome to Sports Organizer">
+          <effect>
+            <Bloom />
+          </effect>
+          <font>
+            <Font name="Agency FB Bold" size="20.0" />
+          </font>
+          <textFill>
+            <Color blue="0.875" green="0.875" red="0.875" fx:id="x2" />
+          </textFill>
+        </Label>
+        <Label layoutX="99.0" layoutY="62.0" prefHeight="18.999908447265625" prefWidth="329.0" text="We make organizing a sports event very easy." textFill="$x2">
+          <effect>
+            <Bloom />
+          </effect>
+          <font>
+            <Font name="System Bold Italic" size="15.0" />
+          </font>
+        </Label>
+        <Button id="bball" fx:id="bballPage1" layoutX="194.0" layoutY="233.0" mnemonicParsing="false" onAction="#bballInfoPage" prefHeight="39.0" prefWidth="141.0" text="Basketball" textFill="#cc3100">
+          <effect>
+            <DropShadow>
+              <input>
+                <InnerShadow height="59.3015873015873" radius="29.15079365079365" width="59.3015873015873" />
+              </input>
+            </DropShadow>
+          </effect>
+          <font>
+            <Font size="15.0" fx:id="x1" />
+          </font>
+        </Button>
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>
